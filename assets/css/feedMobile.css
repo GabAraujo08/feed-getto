@@ -34,7 +34,15 @@ margin: 0;
 
 body{
 background-color: #fff;
+overflow: hidden;
 }
+
+
+.container-fluid .box-area-perfil .area-perfil .box-momentos::-webkit-scrollbar {
+  display: none;
+}
+
+
 .header-feed{
   display: flex;
   flex-direction: row;
@@ -143,7 +151,9 @@ position: absolute;
 width: 100%;
 }
 
-.container-fluid .box-area-perfil .area-perfil .box-publicacoes .titulo-box-publicacao {
+.container-fluid .box-area-perfil 
+.area-perfil .box-publicacoes 
+.titulo-box-publicacao {
 height: 60px;
 display: flex;
 flex-direction: column;
@@ -152,7 +162,9 @@ justify-content: center;
 
 
 
-.container-fluid .box-area-perfil .area-perfil .box-publicacoes .titulo-box-publicacao h1{
+.container-fluid .box-area-perfil 
+.area-perfil .box-publicacoes 
+.titulo-box-publicacao h1{
 font-family: 'InterRegular';
 font-style: normal;
 font-weight: 600;
@@ -161,7 +173,9 @@ line-height: 17px;
 color: #000000;
 }
 
-.container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao{
+.container-fluid .box-area-perfil 
+.area-perfil .box-publicacoes 
+.publicacao{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -171,9 +185,14 @@ color: #000000;
   margin-bottom: 15px;
 }
 
-.container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .header-publicacao{
-display: flex;
-flex-direction: row;
+.container-fluid .box-area-perfil 
+.area-perfil .box-publicacoes 
+.publicacao .header-publicacao{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -182,12 +201,12 @@ flex-direction: row;
 .publicacao .header-publicacao 
 .informacoes-perfil-publicacao .nick-e-bio-perfil-publicacao
 .nick h1 {
-font-family: 'InterRegular';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 18px;
-color: #000000;
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
 
 }
 
@@ -196,12 +215,12 @@ color: #000000;
 .publicacao .header-publicacao 
 .informacoes-perfil-publicacao .nick-e-bio-perfil-publicacao
 .bio p {
-font-family: 'InterRegular';
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 12px;
-color: #664187;
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 12px;
+  color: #664187;
 
 }
 
@@ -210,10 +229,18 @@ color: #664187;
 .area-perfil .box-publicacoes 
 .publicacao .header-publicacao 
 .box-btn-configuracao-publicacao button{
-background: none;
-border: none;
+  background: none;
+  border: none;
 
 }
+.container-fluid .box-area-perfil 
+.area-perfil .box-publicacoes 
+.publicacao .header-publicacao 
+.box-btn-configuracao-publicacao button img{
+  
+width: 0.4rem;
+}
+
 
 .container-fluid .box-area-perfil 
 .area-perfil .box-publicacoes 
@@ -248,7 +275,7 @@ flex-direction: column;
 .container-fluid .box-area-perfil 
 .area-perfil .box-publicacoes 
 .publicacao .box-img-publicacao {
-width: 85%;
+width: 100%;
 height: auto;
 border-radius: 7px;
 display: flex;
@@ -272,7 +299,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 13px;
 line-height: 12px;
-width: 85%;
+width: 100%;
 color: #656565;
 margin-top: 10px;
 }
@@ -304,11 +331,12 @@ border: none;
 }
 
 .container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .box-btn-acoes button img{
-width: 30px;
+width: 1.5rem;
 }
 
 .container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .acoes-publicacao .tempo-publicacao p{
 margin: 0;
+font-size: 0.9rem;
 
 }
 
@@ -337,4 +365,77 @@ width: 30px;
 display: none;
 }
 }
+
+
+@media (max-width: 1300px) {
+  .responsividade-sidebar .sidebar {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1300px){
+  
+
+  .container-fluid {
+    width: 60%;
+}
+  .container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .header-publicacao .informacoes-perfil-publicacao .img-perfil-publicacao img {
+    width: 100px;
+    height: 100px;
+    border: 4.06796px solid #FFFFFF;
+    box-shadow: 0px 5.13592px 5.13592px rgb(0 0 0 / 25%);
+    border-radius: 50%;
+}
+
+  .container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .header-publicacao .informacoes-perfil-publicacao .nick-e-bio-perfil-publicacao .bio p {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 12px;
+    color: #664187;
+}
+  .container-fluid .box-area-perfil 
+  .area-perfil .box-publicacoes 
+  .publicacao .header-publicacao 
+  .box-btn-configuracao-publicacao button img{
+    
+  width: 0.5rem;
+}
+
+.container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .legenda-publicacao{
+  font-size: 1.3rem;
+  line-height: normal;
+}
+
+.container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .box-btn-acoes button img{
+  width: 2.5rem;
+}
+
+.container-fluid .box-area-perfil .area-perfil .box-publicacoes .publicacao .acoes-publicacao .tempo-publicacao p{
+  font-size: 1.4rem;
+}
+  .container-fluid .box-area-perfil .area-perfil .box-momentos {
+    display: none;
+}
+
+  .header-feed{
+    display: none;
+}
+
+.container-fluid .box-area-perfil 
+.area-perfil .box-publicacoes 
+.titulo-box-publicacao {
+  display: none;
+}
+.container-fluid .box-area-perfil .area-perfil hr{
+  display: none;
+}
+
+}
+
+
+
+
 
